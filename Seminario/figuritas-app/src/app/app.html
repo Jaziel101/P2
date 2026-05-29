@@ -1,0 +1,14 @@
+<h1>
+{{ title }}
+</h1>
+<ul>
+  <li *ngFor="let juegos of figutitas; let i = index">
+    {{ juegos.nombre }}
+    <button (click)="eliminarJuego(i)">Eliminar</button>
+    <button (click)="juegos.favorito=!juegos.favorito">⭐</button>
+    <span *ngIf="juegos.favorito"> (Favorito) </span>
+  </li>
+</ul>
+<label for="nuevo">Agregar nuevo juego: </label>
+<input [id]="nuevo" [(ngModel)]="nuevoJuego" placeholder="Nombre del juego">
+<button (click)="agregarJuego()">Agregar</button>
