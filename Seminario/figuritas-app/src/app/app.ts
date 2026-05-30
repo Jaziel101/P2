@@ -30,3 +30,4 @@ export class App {
     this.figutitas.splice(index, 1);
    }
 }
+//Jaziel Sergio Mengoa Pacheco - 2023-06-19
